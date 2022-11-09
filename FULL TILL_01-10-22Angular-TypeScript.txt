@@ -1,0 +1,3454 @@
+what is web application ?
+is application which can be accessed from anywhere and provides services over the internet.
+For ex gmail.com,facebook.com,amzon, irctc.
+
+1.static web application
+  data and info doesn't change with respect to person to person or time to time.
+  
+2.dynamic web application 
+  an application whose data and info is changes with respect person to person or time to time.
+For ex.facebook.com , amazon ,gmail
+
+to develop an dynamic web application we need to follow some structure/architecture 
+
+3-tier architecture need to follow to 
+1.Client  
+2.Server 
+3.DataBase
+
+to devlop an any  dynamic web application two things are rwquired
+1.FrontEnd 
+to develop an front end we need html,css,Bootstrap,Javascript/typescript
+
+1.HTML -> it represents the structure of data
+
+2.CSS -> Cascading style sheets
+  css is used to apply style to an web components.
+
+3.Javascript/TypeScript ->
+ to perform an action on any webpage we need to use JavaScript.
+ to add functionality to any html elemnts then we need to use.
+
+Bootstrap,JQuery.
+Bootstrap => provide readymade classes to apply css instead of applying manually CSS.
+
+
+Angular,ReactJS
+
+Static Data :
+the data which is not changed from person to person or time to time then it is called static data.
+HTMl and CSS is sufficient to develop.
+
+Dynamic Data :
+will be changed from person to person or time to time .
+for dynamic data html is not sufficient we need Javascript.
+
+
+2.Backend
+is respnsible to save data which is generated from our application
+for ex.signUp Page
+also it is responsible to which things we need to show on web page.
+
+
+FrontEnd technologies(HTMl,CSS,JS/Ts) doesn't have capbility to connect with database.
+hence we need server side technologies 
+for ex. java,nodeJs,python,dot net
+
+==============
+What is Angular ?
+angular is client-side-framework used to develop dynamic web application.
+
+angular framework is developed by =>google.
+
+the main use of angular is to develop single page application.
+what is single page application means ?
+data /content is loaded dynamically 
+page reload is not required while using the application.
+application will be fast.
+For ex.gmail.com,Facebook.com,Github
+
+
+
+multi-page application.
+
+
+angular JS and angular 2
+angular Js framework was developed using JavaScript
+Angular is developed using TypeScript.
+
+angular JS and Angular are both different frameworks.
+
+
+
+typescript => 
+it is an open source programming langugae.
+developed by => microsoft
+
+framework => is nothing but an ready made modules or pre defined modules,readymade classes and readymade function.   
+             using framework we can make development easy,fast.
+			 
+typescript =>	typescript is superset of javascript
+                tyepscritpt = js + types+oop features.
+
+ts is develoed by using JS as base language.				
+
+typescript vs javascript =>
+
+1)
+javascript is dynamically typed language
+typescript is strongly typed language
+
+for ex
+   Incase Of JavaScript
+    var x = 10 ;
+     x = "Hi";
+	 x = false ;
+	 console.log(x); o/p false ;
+	 
+	 incase Of TypeScript
+	 var x = 10 ;
+	 x = "Hello";
+	 console.log(x); throw an error due to strictly typed language.
+	 
+	 var x:number = 10 ;
+	  x = "Hi"
+	  console.log(x); // throw an error due to strictly typed language.
+	 
+	 
+	 
+2.
+function arguments and parameters are not mandatory incase of JS.
+    
+function add(x,y){
+ console.log(x+y);
+}
+
+add(5,6); //o/p 11	
+	 
+add(5);	 // NAN
+add(); // it will run doesn't give an error
+
+function areguments and parameters are mandatory incase of TS.
+
+function add(x,y){
+ console.log(x+y);
+}
+
+add(5,6); //o/p 11	
+	 
+add(5);	 // compiler time error.
+
+or while declaring parameters we can define type of parameters incase of TypeScript.but JS doesn't allow type.
+for ex. x is of type number.
+function add(x:number,y:number){
+ console.log(x+y);
+}
+
+
+'' or "" , 
+string + number = string;
+for ex. '2' + 3 = 23 ;
+number + number = number
+2+3 = 5
+number+ string = string
+3+'2' = 32
+nummber + undefined = NAN (not a number);
+
+add('2',3);
+
+3.js does not support oops features
+  ts support oops features 
+   for ex classes, interfaces, inheritance etc.
+   
+4.
+.ts extension
+.js extenion
+
+5.
+ typescript will give error at compile time
+ javascript will give error at runtime.
+
+6.typescript support modules 
+  javascript doesn't support modules.
+ 
+a valid javascript is valid typescript code.
+but a valid typescript code is not  valid javascript code.
+
+
+Note:
+Browser doesn't undestand the typescript code so we need to convert the typescript code into javascript.
+tsc compiler=> will convert typescript code into javascript then we can run javascript into browser.
+transpilation/compilation is process to convert typescript code into javascripr.
+
+
+ ========= Installation 
+ 
+ nodeJs =>
+   is not programming language
+   it create environment where you can run your javascript code outside browser.
+   
+ https://nodejs.org/en/download/
+ node -v => check whether node is installed or not.
+
+ when you install nodejs then automatically npm(node package manager) will gets downloaded.
+ 
+ https://www.npmjs.com/ => 
+ npm => node package manager
+        it is used to download (packages,frameworks) which are in the remote repository.
+	
+npm install -g typescript	
+	
+tsc -v 
+	
+compile code using below command
+ tsc fileName.ts
+
+Run TypeScript Code
+ node fileName.js
+ 
+ or 
+ 
+ TypeScript Playground
+ https://www.typescriptlang.org/play
+ 
+ ==================
+Variable and (Built in)or Primitive Data Types:
+ 
+Variable:  
+Variable are used to store data or information.
+ 
+using var,let,const we can declare variables in typescript.
+
+for ex. syntax
+var x = 10 ;
+var = keyword
+x = variable name or dataholder which holds the value.
+10 = value
+
+Data Type =>
+  helps us to what kind of value the data has.
+  whether it is number,string,boolean etc
+  
+  
+data types :
+1.number
+2.string
+3.boolean
+
+1.number => number is data type which is used to represent numeric data.
+ for ex.
+ 
+ var x:number = 10 ;
+ here 
+ var => keyword used to declare varaibles in ts
+ x  =>  it an variable Name or dataholder which holds the value 
+ number => is data type. when you specify data type number then you can store only numeric data in variable.
+ 10 => value/data .
+ 
+ /*var x:number = 10 ;
+x = 10.5;
+console.log("Value of x is ",x);*/
+
+/*var x:number ;
+x = 10;
+console.log(x);*/
+
+2.string 
+   It is built data type.
+   used to represent or store alphabets or textual data.
+
+For Ex.
+   
+var message:string = "Hello world";
+console.log("message " + message);
+
+var message:string ;
+message = "Test123#"
+console.log("message " + message);
+
+//using template literals(backtickscks)
+var message:string ;
+message = "Hi All";
+console.log(`message ${message}`)
+
+3.boolean 
+  It is built data type.
+  is used to represent or store boolean type of data either true or false.
+
+for ex 
+var isLoggedIn : boolean = false ;
+
+internal value of false is 0 ;
+internal value of true is  1 ; 
+
+
+========
+13-09-2022
+
+Practice Examples :
+
+/*var x : number = 5 ;
+console.log(x+'5');
+
+console.log("Hi"+1);
+console.log(2+5);
+console.log("Hi"+true);
+console.log(false+" hello");*/
+
+
+====== String Examples  ===============
+// find the length of string
+var message:string = "Hello Everyone";
+console.log("length is "+message.length);
+
+//find length of string and store in number variable
+var message1:string = "Hello Everyone";
+var messagelength1:number ; // declaration
+messagelength1 = message1.length ; // initialization
+
+//or 
+var messagelength1:number = message1.length ; //declaration and initialization
+console.log(messagelength1);
+
+//get character of string at specified index
+console.log("Character is "+message[6]);
+
+ 
+
+Array:
+ when you want store multiple data/values in single variable then we need to use an array
+ 
+ without arrays
+ var x:number = 10 ;
+ 
+ with arrays
+ var x:number[] = [10,20,30,40,50];
+
+By using Index we can access array elements.
+Array Index starts with 0 i.e the index of first element of array is 0.
+
+Length => no of elements present in the array we need count from 1.
+
+Example Practice : 
+
+//string type array
+var players:string[] = ["Sachin","Virat","Rohit"];
+console.log("Player List is ",players);
+
+//number type array
+var numberList:number[] = [1,2,3,4,5];
+console.log(numberList);
+
+
+//find the length of array
+var players:string[] = ["Sachin","Virat","Rohit"];
+console.log("Length of playerList " , playerList.length); // 3
+
+//blank array
+var list:string[] = []; 
+console.log(list.length); // 0
+
+// find the length and store in another variable
+var players:string[] = ["Sachin","Virat","Rohit"];
+var count : number = players.length ;
+console.log(count); // o/p 3
+
+
+//find the specific element from an aray
+//array index starts with 0
+var playerList:string[] = ["Sachin","Virat","Rohit"];
+console.log(playerList[1]); // Virat
+
+//Note : If you are accessing an element by using out of range index then you will get Undefined value not error.
+var playerList:string[] = ["Sachin","Virat","Rohit"];
+console.log(playerList[3]); // o/p undefined  - at index 3 we dont have any value 
+
+
+===========
+14-09-2022
+
+/*
+var x : string | number; // declaration
+x = "Hi";   // initialization
+console.log(x);// o/p hi
+x = 1 ; // reinitialization
+console.log(x);// o/p 1
+x = false ;
+console.log(x);// it will give at the time of compilation.
+
+*/
+
+/*
+var x : string | boolean = false ; // declaration and initialization
+console.log(x);
+
+
+var x : string | number[] ;
+x = "Hello";
+console.log(x);
+x = [1,2,3,4];
+console.log(x);
+
+*/
+
+
+any type => 
+  it is a special data type in typescript.
+  it is used when you dont know the type of data then use any data type.
+  we can store any type values in that variable.
+
+  for ex. 
+/*
+//any data type
+var data : any ;
+data = "Hello" // initialization
+data = false; // reinitialization
+console.log(data); // o/p false
+
+var x : any ;
+x = 18  ;
+console.log(x); // o/p 18
+
+var books:any;   // declaration
+books = ["Ramayan","Mahabharat",1,false,123.45,undefined]; // initialization
+console.log(books);
+ 
+//or
+
+var books:any = ["Ramayan","Mahabharat",1,false,123.45,undefined]; // declaration and initialization
+console.log(books);
+
+*/
+
+
+Object in Ts:
+by using arrays we can store group of data/values in single variable but we cannot store data in key-value pairs.
+
+If we want to represent/store a group of key-value pairs data then we should go for objects. 
+
+var basicObj: any = {
+    firstName: "Sachin",
+    lastName: "Tendulakar",
+    age: 40
+}
+
+//console.log(basicObj);
+
+var bookObj : any = {
+    bookName:"Mahabharata",
+    bookPrice:500,
+    publication:"xyz" 
+}
+
+//access object properties using dot operator.
+console.log(bookObj.bookName);
+
+
+var bookObj:any = {
+ 
+} 
+
+
+
+=======
+15-09-2022
+
+Object in Ts:
+by using arrays we can store group of data/values in single variable but we cannot store data in key-value pairs.
+
+If we want to represent/store a group of key-value pairs data then we should go for objects. 
+Objects store information in key-value pairs
+By Using key we can access the data in the objects.
+
+
+/*var basicObj: any = {
+    firstName: "Sachin",
+    lastName: "Tendulakar",
+    age: 40
+}
+*/
+//console.log(basicObj);
+
+/*var bookObj : any = {
+    bookName:"Mahabharata",
+    bookPrice:500,
+    publication:"bhavan book university" 
+}
+
+*/
+
+
+// Object declaration and initialization
+/* 
+var studentObj : any = {
+  firstName:"Rahul",
+  lastName:"sharma",
+  age:"ghjgj",
+  isMarried:false
+}
+
+
+console.log("First Name " + studentObj.firstName + "Last Name " + studentObj.lastName);
+
+console.log(`first Name ${studentObj.firstName} last Name ${studentObj.lastName}`);
+*/
+
+
+//nested obj  (object inside another object)
+/*
+var studentObj : any = {
+    firstName:"Rahul",
+    lastName:"sharma",
+    age:30,
+    isMarried:false,
+    address : {
+       city:"Pune",
+       state:"Maharashtra",
+       country:"India" 
+    }
+}
+
+console.log(studentObj.address.state);
+
+*/
+
+//Array Inside Object
+/*
+var studentObj : any = {
+    firstName:"Rahul",
+    lastName:"sharma",
+    age:30,
+    isMarried:false,
+    address : {
+       city:"Pune",
+       state:"Maharashtra",
+       country:"India" 
+    },
+    skills:["Angular","HTML","CSS","Bootstrap"]
+} 
+
+//print specific skills
+ console.log("Selected skill is " + studentObj.skills[4]);
+
+ console.log("Skills " , studentObj.skills);
+
+// retrive skills and store in another variable
+var skillset:string[] = studentObj.skills;
+
+//usig template literal show skillset
+console.log(`Skill Set Of students are ${skillset}` );
+
+// declare boolean type variable and assign value
+var married:boolean;
+married = studentObj.isMarried ;
+console.log(married);
+
+var age:number = studentObj.age ;
+console.log("Age " + age);
+
+*/ Object Types
+1.type
+2.interface
+
+Using Type/Interface we can assign type to the objects
+the object type consist of key:type pairs
+where 
+key - name of key
+type - type of key for ex any data type we can assign depend upon our requirement 
+
+using type/interface we can put restriction on object. 
+
+When you are Initializing object of type interface then it is mandatory to define property which are in interface 
+also data type should be same.
+
+
+Ts compiler will throw an error when we try to access property which is not defiend in interface
+TS compiler will throw an error when you assign new property or if you assign new data type for property. 
+
+
+// use interface for type checking 
+interface Student {
+    firstName:string;
+    lastName:string,
+    isMarried:boolean,
+    mobileNumber:number,
+    age:number
+}
+
+var studentDetails:Student = {
+   firstName:"Rohit",
+   lastName:"Sharma",
+   isMarried:true,
+   age:30,
+   mobileNumber:88888888
+}
+
+console.log(studentDetails);
+
+//use ? mark to make fields nonmandatory in interface while creating object
+interface StudentNew {
+    firstName:string;
+    lastName:string,
+    isMarried:boolean,
+    mobileNumber?:number,
+    age?:number
+}
+
+var studentNewDetails:StudentNew = {
+   firstName:"Rohit",
+   lastName:"Sharma",
+   isMarried:true,
+}
+
+console.log(studentNewDetails);
+
+
+===============================
+16-09-2022
+
+var studentObj : any = {
+    firstName:"Rahul",
+    lastName:"sharma",
+    age:30,
+    isMarried:false,
+	dateOf
+    address : {
+       city:"Pune",
+       state:"Maharashtra",
+       country:"India" 
+    },
+    skills:["Angular","HTML","CSS","Bootstrap"]
+} 
+
+2.Object Types
+1.Interface
+2.Type
+ 
+  "type" as object Type
+   "type"  is used to assign type to an object.
+   
+   Ex.
+   
+  // Type
+/*type Employee={
+  employeeName:string,
+  employeeSalary:number,
+  designation:string,
+  skills:string[]
+} 
+
+var employee:Employee = {
+   employeeName:"Sam",
+   employeeSalary:30000,
+   designation:"Angular Developer",
+   skills:["HTML","CSS"]
+}
+
+console.log("employee Details",employee);
+*/ 
+
+
+//Nested Interface 
+  //Nested Interface 
+/*  
+interface Student {
+    firstName:string,
+    lastName:string,
+    age:number,
+    isMarried:boolean,
+    address:Address
+}
+
+interface Address {
+    city:string,
+    pincode:number,
+    state:string
+}
+
+var strudentForm:Student ={
+   firstName:"Sam",
+   lastName:"Sharma",
+   age:30,
+   isMarried:false,
+   address:{
+       pincode:413517,
+       city:"Pune",
+       state:"Maharashtra"
+   },
+   
+}
+
+console.log("Student Form",strudentForm);
+
+*/
+  
+
+Array of objects
+  is nothing but group of objects of particular type.
+  for ex 
+   we can store the set of student class objects in array of objects.
+   
+   syntax 
+    var variableName:interfcaeName[] = [obj1,obj2,obj3.....]
+
+Ex 1.	
+interface Employee {
+    name: string,
+    salary: number
+}
+
+var employeeDetails: Employee[] = [
+    {
+        name: "Mike",
+        salary: 30000
+    },
+    {
+        name: "David",
+        salary: 40000
+    }
+]
+
+Ex.2
+/*
+var studentDetails :Student[] = 
+[
+{
+    firstName:"Sachin",
+    lastName:"Tendulkar",
+    age:40,
+    isMarried:true,
+    address:{
+        pincode:11111,
+        city:"Mumbai",
+        state:"Maharashtra"
+    },
+    
+},
+
+{
+    firstName:"Rohit",
+    lastName:"Sharma",
+    age:35,
+    isMarried:true,
+    address:{
+        pincode:411041,
+        city:"Pune",
+        state:"Maharashtra"
+    },
+    
+ },
+
+ {
+    firstName:"Virat",
+    lastName:"Kohli",
+    age:34,
+    isMarried:true,
+    address:{
+        pincode:411041,
+        city:"Delhi",
+        state:"Maharashtra"
+    },
+ }
+]
+
+console.log("studentDetails",studentDetails);
+
+console.log("Total No Of students",studentDetails.length);
+
+
+console.log("Last Name",studentDetails[2].lastName);
+
+console.log("first Name",studentDetails[1].firstName);
+
+console.log("City",studentDetails[2].address.city);
+
+*/
+
+    
+	
+What we learned till now in Ts
+difference between ts and js.
+Variables
+ dataTypes
+  -string
+  -number
+  -boolean
+Array 
+Any Data Type
+Object
+  -normal object
+  -nested object
+  -array inside object
+  -Object type
+     - Type
+	 - Interface
+Array Of Objects 
+ 
+
+ 
+Built-in(Primitive) Data Type
+1.number
+2.string
+3.boolean
+
+//below are sepcial Data type
+4.any
+5.null
+6.undefined
+7.Void
+
+User Defiend Data-Types
+Interface 
+Type
+Class
+
+============================================================
+19-09-2022
+
+null vs undefined
+are special pre-built data types in typescript.
+null and undefined both acts as value as well as data type in typescript.
+
+
+undefined 
+----------
+1.if you declare an variable but doesn't assign the valut to that variable
+ then that variable is called undefied.
+
+2.TS will assign undefined value to that variable
+var a;
+console.log(a); // undefined
+ 
+or 
+var x:number;
+console.log(x);// undefined
+
+3.value is not initialized or we do not know its value 
+
+4.undefined is also acts as data type in typescript.
+let num:undefined;
+num = undefied // o/p undefined 
+
+
+Null in TypeScript :
+----------------
+1..null means nothing if you declare an variable we are assigning null value to that variable
+null means nothing absence of any value
+
+2.ts doesn't set null value we can set null value to that variable
+
+var a = null ;
+console.log(a);
+
+3. value is assigned but it is null means nothing
+
+4.
+null is also data type in typescript
+let num:null;
+console.log(num);o/p undefined
+
+num = null ;
+console.log(num)// o/p null
+
+
+5.the only value that you can assign to null type variable is null or undefied.
+ 
+
+ null vs undefined Practice
+ -------------------------
+ 
+ /*var x ;
+console.log(x); // o/p undefined
+
+var num: number ;
+console.log(num); // undefined
+
+var y : undefined ; // undefined as data type you can assign undefined value
+y = undefined ;
+console.log(y); */ 
+
+/*
+var x : any = null ;
+console.log(x); // o/p null
+
+var y : null ;
+y = null ;
+console.log(y);
+
+var a:null ;
+a = null ;
+//a = 10 ;  // error you can assign only null value to that variable.
+console.log(a);
+
+var b:undefined ;
+b = undefined ;
+//b = 10 ;  // error you can store only undefined value in variable.
+b = null ;
+console.log(b);
+
+var msg : any ;
+msg = null ;
+console.log(msg); // o/p null
+*/
+ 
+ 
+Operators
+---------------
+ 
+  1.arithmetic operators
+  2.comparasion operators
+  3.logical operators
+
+1.arithmetic operators
+  + , - , * , % , / , ++ , --
+  
+ 10 + 20 
+ 20 - 10 
+ 20 * 10 
+ 
+% => modulas operators or reminder operator
+for ex.
+20 % 10  => reminder is 0 hence  o/p = 0 
+ 
+/ => division operator  
+for ex.
+20 / 10 => o/p 2 
+
+++ -> Increment Operators
+-- -> decrement operator
+
+Arithmetic Operators Practice 
+----------------------------
+var y = 20 ;
+/*
+console.log(20 % 10) // o /p 0
+console.log(20 / 2) // o/p 10
+*/
+
+/*
+var x = 10 ;
+//1.postincrement
+console.log(x++); // o/ p 10
+console.log(x); // o/p 11
+
+//pre increment
+console.log(++x) // o/p  12
+console.log(x); // o/p  12
+
+var x = 5 ;
+++x // o/p 6
+x++ // o/p 7
+console.log(x++) // o/p 7
+console.log(x); // o/p 8
+
+var a = 20 ;
+a--
+--a
+console.log(a); // o/p 18
+*/
+
+
+
+2.Comparision Operators
+  < , <= , > , >= , == , === , != , !==
+ 
+ difference between = , == , === 
+ 1. = operator is used to assign value to variable
+   for ex.
+   var x = 10 ;
+
+ 2. == , === are equality operator.
+             used for comparison
+
+difference between == && ===
+== (equality operator) => value is important while comparing but not data types. 
+		          
+=== (Strict equality operator)=> value and data type is important while comparing.
+ 
+=== operator is recommended to use. 
+
+for ex. 
+1.var x = 10 ;
+var y = '10';
+console.log(x == y) // compile time error due to strict check in ts.but in js o/p will be true.
+
+ 
+2.var x = 10 ;
+var y:any = '10';
+console.log(x == y) // o/p true 
+
+3.
+var x = 10 ;
+var y:any = '10';
+console.log(x === y) // o/p false value and data type are different.  
+	
+
+comparision operator examples	
+----------------
+1.
+var x = 10 ;
+var y = 20 ;
+
+console.log(x < y); // 10 < 20   o/p  true ;
+console.log(x <= 11 ) // o/p true
+console.log(x < 10) // o/p false
+
+console.log(y > x); //o/p true
+console.log(y >= 20); // o/p true
+console.log(y > 21); // o/p false
+
+2.
+let num1 = 10 ;
+let num2 = 20 ;
+let num3:any = '10' ;
+
+let num4:any = 'ten';
+/*
+console.log(num1 == num2) // o/p false
+console.log(num1 === num3); // o/p false (value is same but data type is different).
+console.log(num1 == num3) // o/p true (value is same hence true)
+console.log(num1 == num4) // o/p false (value is different i.e 'ten' is character).
+console.log(num1 === num4) // o/p false (value and data type is different).
+*/
+
+let boolean1:boolean = false;
+let boolean2:any = 'true'
+let boolean3:boolean = true;
+let num:any = 0 ;
+
+console.log(boolean1 == boolean2) ; // false
+
+console.log(boolean3 == boolean2) ; // false (value is different)
+
+console.log(boolean1 == num) ; // o/p true internal value of boolean1 variable is zero hence (0 == 0) true  
+
+console.log(boolean1 === num) ; // false (value are same but data type is differenct)
+ 
+  
+3.Logical operators
+ && , || , !
+
+ 
+=======================================
+20-09-2022
+
+3. Logical Operators
+ && , || , !\
+ 
+ cond1 && cond2 => if both conditions are true then only o/p will be true
+
+ cond1 || cond2 =>  if any one condition is true then o/p will be true.
+ 
+ ! => Logical Not operator 
+ 
+ conditional Statements:
+  1.if
+  2.if-else
+  3.if-elseif-else
+ 
+syntax: 
+if(condition){
+ statement
+}
+
+//if-else syntax
+if(condition){
+ //statement
+}else {
+// statement
+}
+
+
+// if else if statements syntax
+if(condition1){
+ statement
+}
+//
+else if(condition2){
+
+}else {
+  //statament
+}
+
+----------------
+//Logical Operator Examples
+
+/*
+//logical operatos && || !
+var num1:number = 10 ;
+var num2:number = 20 ;
+
+console.log(num1 < 10 && num2 > 20); // o/p false
+
+console.log(num1 >= 10 && num2 <=20 && num1 === 10); // true
+
+console.log(num1 < 10 || num2 <=20); // true
+
+console.log(num1 < 10 || num2 < 20); // false
+
+console.log((num1 < 10 && num2 < 10) || num2 < 20);
+
+console.log(num2 === 20 && (num1 < 10 || num2 <=20)); // true
+
+console.log(!(num1 === 10) && num2 == 20);
+
+console.log(!(num2 === 20) || (num1 == 10 || false == false) || (num2 >= 20));
+*/
+
+
+//Examples :
+//
+/* 1.
+var num1 : number = 10;
+var num2 : number = 20 ;
+*/
+
+/*
+if(num1 > num2){
+    console.log("Num1 is greater than Num2");
+}
+console.log("Hi Everyone"); */
+
+/*
+if(true){
+    console.log("Num1 is greater than Num2");
+    console.log("Hi Everyone");
+} */
+
+/* 2.
+var num1 : number = 10;
+var num2 : number = 20 ;
+if(num1 > num2){
+    console.log("Num1 is greater than Num2");  
+}else {
+    console.log("Num2 is greater than Num1") ;
+}
+*/
+
+/* 3.
+var num2:number = 18 ;
+
+if(num2 % 2 == 0){
+    console.log("Given number is even number");
+    console.log("Hey,How are you");
+    
+}else {
+    console.log("Given number is odd number");
+}
+console.log("Hi , Good Morning");
+*/
+
+// if time is between 6AM and 12PM -> Good Morning
+  //if its 12PM-18PM -> Good After Noon
+  //good Evening 
+ /* 
+ let x:number = 14 ;
+ if(x >= 6 && x < 12){
+    console.log("Good Morning");
+ }else if(x >= 12 && x < 18){
+    console.log("Good Afternoon");
+ }else{
+    console.log("Good Evening");
+ }
+
+ */ 4.
+// if we have only one statement the curly brackets are optioanl
+
+ let x:number = 22 ;
+ if(x >= 6 && x < 12)
+    console.log("Good Morning");
+ else if(x >= 12 && x < 18)
+    console.log("Good Afternoon");
+ else
+    console.log("Good Evening");
+ console.log("Hi Everyone");
+ 
+// 5.
+let a:number = 6 ;
+if(x >= 6 && x < 12){
+console.log("Good Morning");
+}
+else if(x >= 12 && x < 18){
+console.log("Good Afternoon");
+}
+else{
+console.log("Good Evening");
+}
+console.log("Hey");
+
+
+Iterative Statements:
+1.while loop
+2.for loop
+
+while loop:
+  if we dont know no of iterations in advance then we need to use while loop
+  while loop will excute as long as condition is true.
+  
+  syntax:
+  while(condition){
+   // statements
+  }
+  
+//for ex
+1.Print "Hi" 10 times on console
+
+ var x:number  = 1 ;
+ while(x <= 10){
+  console.log("Hi") // print statement
+   x++ // increment the number
+ }
+
+------------------------------------------------------------------------------------------------------------------------------
+21-09-22
+Iterative Statements:
+ If we want to excute a group of stataments repeatedly then we need to use iteratice stataments.
+
+1.while loop
+2.for loop
+
+while loop:
+  when you want to excute block of code(group of stataments) repeatedly and 
+  if we dont know no of iterations in advance then we should use while loop
+  while loop will excute as long as condition is true.
+  
+  syntax:
+  while(condition){
+   // statements
+  }
+  
+//for ex
+1.Print "Hi" 10 times on console
+
+ var x:number  = 1 ;
+ while(x <= 10){
+  console.log("Hi") // print statement
+   x++ // increment the number
+ }
+ 
+
+2.Print elements which are divisible by 5 from 1 to 50 ;
+ var x:number = 1 ;
+ while(x <= 50){
+   if(x % 5 == 0){
+     console.log(x);
+   }
+    x++;
+ }
+ 
+ 3.// Print each character of string
+      var str1:string = "Hello"
+	  
+	  var nm = 0 ;
+      while(nm <= str.length-1){
+       console.log(str[nm]);
+       nm++
+      }
+
+ 
+ 2.for loop
+ ------------
+   when you want to excute code repeatedly and if we know the iterations in advance then we should use for loop.
+  Syntax:
+  for(initialization,condition,increment){
+    //stataments
+  }
+
+  1.Print Hi 10 times on console.
+    for(var i=0;i<10;i++){   // you can start from 1 also
+	  console.log("Hi")
+	} 
+  
+  
+  2.Print 1 to 10 console number using 
+    for(var i=1;i<=10;i++){
+	  console.log(i);
+	}
+   
+  3.
+   //Print 3 table on console.
+    var num = 3 ;
+    for(var i=1;i<=10;i++){
+     console.log(num*i);
+    }
+	
+	
+  4.//Print number from 10 to 50 which are divisible by 3 & 5 ;
+
+  for(var x=10;x<=50;x++){
+    if(x % 3 == 0 && x % 5 == 0){
+     console.log(x);
+    }
+ }
+  
+================================================
+ 22-09-2022
+ 
+ // var x:number = 10 ;
+
+// if(x % 2 == 0){
+//  console.log(`${x} is an even number`);
+// }else{
+//     console.log(`${x} is an odd number`);
+// }
+
+// var y:number = 20 ;
+// if(x % 2 == 0){
+//     console.log(`${x} is an even number`);
+// }else{
+//        console.log(`${x} is an odd number`);
+// }
+
+in above example if we see code is getting duplicated even I want to perform same functionality.
+disadvantages :
+ 1.code is getting duplicated
+ 2.line of code is increased
+ 3.development time increased.
+
+To solve the above problem we need to use functions.
+ 
+If any code is repeatedly required in our application then it is not recommended to write that code repeatedly everytime.
+we need to add that lines of code in function and we need to call that function where ever it is required.
+
+main advantages of function is code reusability.
+
+function can perform specific tasks and also function can caluate values.
+In function we can pass input value as parameters and also function can return values. 
+
+stntax :
+ function functionName(arguments){
+  body 
+  retur value // return statament is not mandatory based on requirement you can either return or excute the functionality.
+ } 
+ 
+ examples.
+ Ex.1 Print "Hello Everyone" message on console.
+ 
+ function hello(){
+  console.log("Hello Everyone");
+ }
+ 
+ hello();
+
+Function with parameters
+----------------------- 
+function can accept any number of arguments these are input to the function.
+we can use that arguments inside the function based on our requirement.
+
+
+EX.2 Check whether given number is even or not.
+ 
+ function even(x:number){
+    if (x % 2 == 0) {
+        console.log(`${x} is an even number`);
+    } else {
+        console.log(`${x} is an odd number`);
+    }
+}
+
+even(14);
+
+Ex.3
+function add(x1:number,x2:number){
+    console.log("Addition is " + (x1+x2));
+}
+
+add1(10,20);
+add1(20,30);
+
+
+Ex.3
+
+function hello(nameOfPerson:string){
+ console.log(`Hello ${nameOfPerson}`);
+}
+
+hello("Amol");
+
+Ex.4
+check whether number is positive or negative or zero
+
+function isPositiveOrNegative(x: number) {
+    if (x > 0) {
+        console.log("Positive Number " + x);
+    } else if(x < 0){
+        console.log("Negative Number " + x);
+    }else {
+        console.log("Number is Zero");
+        
+    }
+}
+
+isPositiveOrNegative(11);
+
+
+
+Function with return values
+-----------------------
+function can return values as well
+
+Ex.1 find the square of number and return its value
+
+function square(num1:number){
+     let result:number = 0 ;
+     result = num1 * num1 ;
+    return result;
+}
+
+or // you can directly return 
+function square(num1:number){
+ return num1 * num1;
+}
+
+var result:number = square(10);
+ 
+Ex.2 
+
+*/
+// positive  return 'Yes' Negative 'No' Zero 'Zero'
+/*
+function positive(x:number){
+    if(x > 0){
+        return 'Yes';
+    }else if(x < 0){
+        return 'No';
+    }else {
+        return 'Zero';
+    }
+}
+
+var messge:string = positive(12);
+console.log("message",messge);
+
+console.log(positive(14))
+
+*/
+
+Ex.3 
+//Write a function to check whether number is even if it even return true and else return false.
+function even(x1:number){
+  if(x1 % 2 == 0){
+    return true ;
+  }else{
+   return false ;
+  }
+}
+
+// 
+var isEven:boolean = even(10);
+console.log(isEven);
+ 
+console.log("Result is",even(20));
+
+
+
+   
+ 
+ 
+
+---------------------------------------------------------------------------------------
+23-09-22
+// Example 1
+//Print odd numbers from 1 to 10 using for loop
+function oddNumbers(x1:number,x2:number){
+  for(var i = x1 ; i <= x2 ; i ++){
+    if(i % 2 != 0){
+        console.log(i);
+    }
+  }
+}
+
+
+oddNumbers(1,10);
+*/
+
+/*  Example 2:
+//Find sum of elments from 1 to 5 (using for loop) and return the result.
+
+function add(x1:number,x2:number){
+   var result:number = 0 ;
+   for(var i = 1; i <= 5 ; i ++){
+       result=result + i ;
+   }  
+  return result ;
+}
+
+var sum : number = add(1,5);
+console.log("Result is "+ add(1,5));
+
+*/
+/* Example 3 : 
+//Print each character of string on console
+
+function printEachChar(){
+   var str:string="Thank You";
+   for(var i = 0; i < str.length ; i++){
+     console.log(str[i]);
+   }   
+}
+
+printEachChar();
+
+// you can also pass argument to function and print each character  on console. 
+
+*/
+
+/* Example 3
+//Print elements in reverse order from 1 to 10;
+
+ function reverse(){
+   for(var i=10;i> 0;i--){
+      console.log(i);
+   }
+ }
+
+reverse();
+
+*/
+
+/* Example 4:
+//write a function which will take array as input print each element of an array [10,20,30,40,50]
+
+function test(arr:number[]){
+ for(var i = 0 ; i < arr.length ; i++){
+   console.log(arr[i])
+ }
+}
+
+test([10,20,30,40,50]);
+*/
+
+/* Example 5:
+//write a function which will take array as input find the sum of array elements  For ex.[10,20,30,40,50]
+
+function sum(arr:number[]){
+    var result:number = 0 ;
+    for(var i=0 ; i < arr.length ; i ++){
+        result = result + arr[i]
+    }
+    return result ;
+}
+
+var res : number = sum([10,20,30,40,50]);
+console.log("Result " + res);
+*/
+
+/* Example 6:
+// Write function to find maximum value of the given array.
+
+ function maxelement(arr:number[]){
+   var maxElment = arr[0];
+   for(var i = 1 ; i < arr.length ; i++){
+      if(arr[i] > maxElment){
+        maxElment = arr[i];
+      }
+   }
+   return maxElment ;
+ }
+
+var result:number = maxelement([40,20,60,10,20]);
+console.log("Result " + result);
+
+*/
+ 
+/* Example 7:
+ // write a function to get skills from studentObj and then print each skill on console.
+var studentObj : any = {
+    firstName:"Rahul",
+    lastName:"sharma",
+    age:30,
+    isMarried:false,
+    address : {
+       city:"Pune",
+       state:"Maharashtra",
+       country:"India" 
+    },
+    skills:["Angular","HTML","CSS","Bootstrap"]
+}
+
+function printSkills(obj){
+  var skillsArr : string[]  = obj.skills;
+  for(var i=0 ; i < skillsArr.length ; i ++){
+    console.log("Skills are as follows " + skillsArr[i]);
+  }
+}
+
+printSkills(studentObj);
+
+*/
+// or we can directly pass skills array to function.
+
+/*
+var studentObj : any = {
+    firstName:"Rahul",
+    lastName:"sharma",
+    age:30,
+    isMarried:false,
+    address : {
+       city:"Pune",
+       state:"Maharashtra",
+       country:"India" 
+    },
+    skills:["Angular","HTML","CSS","Bootstrap"]
+}
+
+function printSkills(arr){
+  for(var i=0 ; i < arr.length ; i ++){
+    console.log("Skills are as follows " + arr[i]);
+  }
+}
+
+printSkills(studentObj.skills);
+
+*/
+
+
+/*
+//using '?' we can make parameters non mandatory/optional in function
+
+function add(a1:number,a2?:number){
+  if(a2){ // if you make any parameter optional then you need to check that elment is present or not if present then only perform actions
+    return a1 + a2;
+  }
+  return a1;
+}
+
+var finalResult :number = add(10,20);
+var finalResult1:number = add(10);
+*/
+
+
+
+===========================
+24-09-2022
+
+Three types of functions are there
+
+1.Named functions
+2.Anonymous functions
+3.Arrow functions or fat arrow functions or lambda expression
+
+1.Named Functions
+   the functions which has function keyword and name then that functions are called as
+   named functions
+ 
+   refer above examples for Named functions
+
+2.Anonymous functions
+   
+  -sometime we can define the function without name such type of nameless function are called Anonymous functions.
+  -Anonymous function has function keyword but they does not have name.
+  -normally this function are used for instant use(one time usage).
+  -this function can be passed as input to another function.
+  -Since anonymous function doesn't have same so to access/call/invoke anonymous function 
+   we need to assign anonymous function to the variable.
+  
+   
+ Syntax:
+  function(){
+   // Body of function
+  }
+  
+ Ex.1 Anonymous Functions without parameters 
+   
+   /*
+var hello = function(){
+    console.log("hello everyone");
+}
+
+hello()
+*/
+
+Ex.2. Anonymous Functions with parameters
+
+ /*
+//function with parameters
+var isEven = function(x:number){
+    if(x%2 == 0){
+     console.log(`${x} is Even Number`);
+    }else{
+        console.log(`${x} is odd number`);
+    }
+}
+
+isEven(6);
+
+*/
+
+Ex. 3 Anonymous Functions with return statement
+ /*  
+var sum = function(x1:number,x2:number){
+ return x1 + x2 ;
+}
+
+var result = sum(4,6);
+console.log(result);
+
+*/
+
+ 
+3.Arrow functions or fat arrow functions or lambda expression
+  - this is special function 
+  - introduced as part of ES6 Specification
+  - while declaring the Arrow function we dont require function keyword.
+    parameters and curly brackets are seprated with "=>" (fat arrow) that is why it called as arrow function.
+  - to call or to invoke the arrow function we need to assign this arrow function to variable.	
+ Syntax:
+    (param1,param2,....) => //body of function
+ 
+
+How to create arrow function
+-------
+Take any anonymous function expression
+for ex.
+var add = function(x1,x2){
+  return x1 + x2 ;
+}
+
+from the above function 
+1.remove function keyword
+2.place fat arrow between parenthis and curly brackets
+
+// arrow functions
+var add = (x1,x2) => {
+   return x1 + x2 ;
+}
+ 
+add(6,8); // o/p 14 
+ 
+Ex.1
+
+/*
+var hello =() => {
+    console.log("hello everyone");
+}
+
+hello();
+*/
+
+Ex.2 When you single statement inside function then curly brackets are optional.
+     we can write the function as below
+/*
+var hello = () =>  console.log("hello everyone");
+hello();
+
+*/
+
+Ex.3 
+ When you have single parameter and single return statament inside the function then parenthis and 
+ Curly brackets are optional
+ 
+/*
+var square =  x =>  x * x ;
+console.log(square(5)); o/p 25
+console.log(square(15)); 0/p 
+*/  
+
+Ex.4 When there is no parameters then () empty parenthis is mandatory.
+
+var message = () => console.log("Hello Everyone")
+
+message();
+
+Ex.5 Write arrow function to check whether the given number is even or not.
+
+/*
+var isEven = (x:number) => {
+    if(x%2 == 0){
+     console.log(`${x} is Even Number`);
+    }else{
+        console.log(`${x} is odd number`);
+    }
+}
+
+isEven(23);
+
+*/
+
+Scopes in TypeScript
+--------
+There are 2 scopes
+1.global scope
+2.local scope
+
+1.global scope :
+  ---------
+   the variables which are declared outside the function are having global scope and these variables
+   available for all functions.
+ 
+For Ex.
+var x = 10 ;
+
+function f1(){
+ console.log(x);
+} 
+
+function f2(){
+ console.log(x);
+}
+
+f1();
+f2();
+console.log(x);
+
+O/p
+--
+10
+10
+10
+
+2.Local Scope
+ --------------
+ the variables which are declared inside the function are having local scope and available for that 
+ function only.
+ Outside the function we cannot access these local scoped variables.
+ 
+ function f1(){
+  var x = 20 ;
+  console.log(x)
+ }
+ 
+ f1(); // o/p 20 
+ console.log(x); // error variable x is not defined.
+ 
+ -----
+ 
+ Ex.3 
+ 
+ /*
+var x:number = 20 ;
+function f1(){
+ var x:number = 30 ;   
+ console.log(x);
+}
+
+function f2(){
+  console.log(x);
+}
+
+f1();
+f2();
+console.log(x);
+
+*/
+
+o/p
+30  // function f1 has seprate local variable with name hence o/p 30
+20   // global variable o/p 
+20   // global variable x hence o/p 20
+
+Ex. 4
+
+/*
+var x:number = 50 ;
+function f1(){
+  x = 60 ;   // global variable value is updated hence o/p will be 60.
+  console.log(x);
+}
+
+function f2(){
+console.log(x);
+}
+
+f1();
+f2();
+console.log(x);
+
+*/
+
+o/p
+60
+60
+60
+
+Ex.5
+
+/*
+var x:number = 50 ;
+function f1(){
+  x = 60 ;  
+  console.log(x);
+}
+
+function f2(){
+console.log(x);
+}
+
+f2();
+f1();
+console.log(x);
+
+*/
+//global variable value is updated in function f1 hence when you acces variable x inside f1 or 
+  after function f1() you will get updated value.
+  
+O/p
+50
+60
+60
+
+
+=====================
+26-09-2022
+
+difference between var,let,const ?
+
+var 
+----
+For Ex.
+var x:number = 10 ; // declaration and initialization
+x = 15 ; // reinitialization
+var x:number = 20 // redeclaration
+console.log(x) // o/p - 15 
+
+-If you declare variable with var keyword then ititialization , reinitialization and 
+redeclaration is possible in any scope i.e either in global or local 
+
+- var keyword is function scoped.
+  variable declared with var keyword has access within that function.
+  if we declare outside the function then they are available everywhere.
+
+/* var has function level scope
+function f1(){
+   var x : number = 20 ;
+    if(x == 20){
+       var y:number = 30 ; 
+       console.log(x); 
+    }
+    console.log(y); // 30
+   console.log(x);// 20  
+}
+
+f1();
+*/
+
+
+let
+----
+
+-if you declare variable with let keyword then initialization,reinitialization is possible in same scope 
+but redeclaration is not possible in same scope.
+
+For ex.
+let z:number = 10 ; // declaration and initialization
+z  = 20 ; //  reinitialization
+console.log(z);
+let z:number = 30 ; // error  redeclaration is not possible 
+
+
+-redeclaration is possible in different scope.
+For Ex.
+let z:number = 10 ;
+function f1(){
+    let z:number = 40 ;
+   console.log(z);
+}
+
+f1();
+console.log(z);
+
+- let keyword has block level scope
+  if you try to access let variabe outside the block it will immediately give an error.
+  
+ Ex.1 
+ /* 
+function f1(){
+    let x : number = 20 ;
+     if(x == 20){ // assuming if condition is true
+        console.log(x); // o/p 20 
+     }
+    console.log(x);  //  o/p
+ }
+ 
+ f1();
+ */ 
+ 
+ Ex.2
+ 
+ /*
+ function f1(){
+    if(true){
+       let x : number = 20 ;
+       console.log(x); 
+    }
+   console.log(x);  // error outside the block we cannot access let variabe x  
+}
+
+f1();
+
+*/
+
+const
+------
+If you declare variable with const keyword then  initialization is possible 
+but reinitialization of const variabe is not possible.
+redeclaration is also not possible in same scope.
+
+const y:number = 30 ;    // declaration and initialization
+y = 40 ; // reInitialization is not possible
+const y:number = 40 ; // redeclaration is not possible
+
+- redeclaration is possible in different scope.
+
+For Ex.
+let z:number = 10 ;
+function f1(){
+    let z:number = 40 ;
+   console.log(z);
+}
+
+f1();
+console.log(z);
+
+- const has block level scope
+ 
+For Ex. 
+
+Ex.1
+function f2(){
+    const y:number = 50;
+    console.log(y); //o/p 50
+}
+f2();
+console.log(y); //error
+
+*/
+
+Ex.2
+function f2(){
+    if(true) { // asssume if condition is true
+	const y:number = 50;
+    console.log(y); //o/p 50
+	}
+	 console.log(y); // error due to block scope
+}
+
+f2();
+console.log(y); //error
+
+*/
+---------------
+Note:
+-----
+const -> is best choice when your value of variabe does not change once initialized
+var -> avoid use of var keyword because using var keyword we can redeclare , reassign the variables.
+       and also it does not support the block level scope.
+let -> is the most preferable way for variabe declaration.
+
+
+
+
+----- 
+Array Examples
+
+1.Update array element by using index
+ var arr = [10,20,30,40,50];
+ arr[1] = 60 
+ console.log(arr) // o/p [10,60,30,40,50]
+ 
+ 2.Add element into array using index
+  var arr = [10,20,30,40,50];
+  arr[5] = 50 ;
+  console.log(arr) // o/p [10,20,30,40,50,60]
+  
+ 3.declare an empty array
+  var arr = []
+
+Array Inbuilt Methods
+----------------------
+TypeScript Provides several methods which we can use with arrays
+
+1.push()
+  used to add element at the end of array.
+   E.g
+   var arr = [10,20,30,40,50];
+    arr.push(60);
+    console.log(arr); // o/p [10,20,30,40,50,60]
+  
+2.pop()
+  used to remove last element from an array  
+    E.g
+    var arr = [10,20,30,40,50];
+    arr.pop();
+    console.log(arr);// o/p [10,20,30,40]
+  
+3.unshift()
+  used to add element in the first position of an array.
+   E.g
+    var arr = [10,20,30,40,50];
+    arr.unshift(0);
+    console.log(arr); // o/p [0,10,20,30,40,50]
+
+4.shift()
+  used to remove first element of an array.
+  E.g
+   var arr = [10,20,30,40,50];
+    arr.shift();
+    console.log(arr); // o/p [20,30,40,50]	
+   
+  
+
+5.indexOf
+  used to find the index of element of an array.
+  if element is not found in array then it will return -1.
+  var arr = [10,20,30,40,50];
+  var index = arr.indexOf(40);
+  console.log(index) // o/p 3
+  
+  var indx = arr.indexOf(100);
+  console.log(indx); // o/p -1 
+   
+
+6.slice()
+   used to get part of an array as slice.
+   slice(startIndex,endIndex)
+    it will return array elements from startIndex to endIndex - 1.
+	
+  var arr = [10,20,30,40,50,60]
+  var newArr = arr.slice(2,4)
+  console.log(newArr) // o/p [30,40]
+  
+  If you do not specify endIndex then slice will remove element from startIndex till the last element of an
+  array
+  
+  var arr = [10,20,30,40,50]
+  var newArr = are.slice(2);
+  console.log(newArr) // [30,40,50]
+
+======================================
+27-09-2022
+    
+splice :
+   using splice method we can add element or remove elements from an array.
+   
+   Syntax:
+   splice(startIndex,noOfElements,item,.....)
+    
+   noOfElements	=> delete count how many elements you want to remove
+   
+   -startIndex is mandatory other parameters are not mandatory based on requirement you can add or remove.
+   -splice method modifies the original array.
+   
+ For Ex.
+
+ Ex.1  // start index and noOfElements to be remove are provided 
+ var arr = [10,20,30,40,50];
+ arr.splice(0,2)
+ console.log(arr);  o/p [30,40,50]
+ 
+ or we can store the deleted elements in another array
+ 
+ var arr = [10,20,30,40,50];
+ var newArr = arr.splice(0,2);
+ console.log(newArr) ; // o/p [10,20]
+ console.log(arr); // o/p [30,40,50]
+ 
+ Ex.2 // start index Provided -  elements will be removed from startIndex  in below example 
+
+ var arr = [10,20,30,40,50];
+ var newArr = arr.splice(1)
+ console.log(newArr); //o/p [20, 30, 40, 50] 
+ console.log(arr);  o/p [10]  remaining elements in original array.
+ 
+ or 
+ var arr = [10,20,30,40,50];
+ arr.splice(2)
+ console.log(arr); // o/p [10,20]
+ 
+ Ex.3 //you can add single element or multiple elements
+  i) var arr = [10,20,30,40];
+     arr.splice(4,0,50);
+	 console.log(arr); // o/p [10, 20, 30, 40, 50] 
+ 
+  ii)var arr = [10,20,30,40,50];
+  arr.splice(4,1,60,70);
+  console.log(arr); // o/p [10, 20, 30, 40, 60, 70]
+
+  
+ concat() =>
+ 
+  concatinating 2 arrays and returns new array
+  
+ // var arr1 = [10,20,30];
+// var arr2 = [40,50,60];
+// var arr3 = arr1.concat(arr2);
+// console.log(arr3); 
+ 
+reverse() =>
+ reverse the conents of the array
+ 
+// var arr1 = [10,20,30,40,50];
+// var arr2 = arr1.reverse();
+// console.log(arr2);
+
+sort() =>
+sort the elements of an array alphabatic or number based on its contents
+
+// var arr1 = [10,20,70,60,50];
+// var arr2 = arr1.sort();
+// console.log(arr2);
+
+
+ 
+
+array iteration
+==========
+ there are various different functions are available in typescript array object
+ to iterate and process the elements.
+  
+  
+1.forEach
+we can iterate array using for each method.   
+For each element in the given array call the function by passing the element
+
+n.forEach(function(element, index, array) {
+
+});
+
+we can also use arrow function 
+
+n => array 
+
+here the function will be called for each element of the array by passing three parameters
+element for which it is calling(value), index of the element and total array.
+-parameters are optional but based on requirement we can add parameters. 
+-when you perform some action on array elments forEach will modify the original array.
+
+forEach vs forLoop
+-----------------
+for loop is general purpose loop we can use everywhere
+forEach method we can use only for arrays.
+
+For Ex. by using for loop we can print elements in original order or rever order
+        but by using forEach we can iterate elements in the original order.
+		
+
+
+// var employeeArr : string[] = ["Sam","John","David","Mike"];
+
+// employeeArr.forEach(function(element,index){
+//     //print element and index 
+//     console.log(element,index);
+// })	
+
+	using arrow function we can reduce the lines of code hence use arrow function
+	
+	// employeeArr.forEach((element,index)=> console.log(element,index));
+
+	
+   
+
+2.Filter
+ -----------  
+ -filter method will filter the element based on some condition and it will creates new array with element.
+ -filter method doesn't modify the original array but it returns new array.
+ 
+ For Ex. // filter the elements who age is greater than 30.
+ 
+ 
+var studentsArr:any = [{
+    name: "john",
+    age: 40
+},
+{
+    name: "sam",
+    age: 50
+},
+{
+    name: "Mike",
+    age: 20
+}
+]
+
+var newStudentsArr = studentsArr.filter(function(element,index){
+ if(element.age > 20){
+   return true;
+ }else{
+ return false ;
+ }
+});
+
+console.log(newStudentsArr);
+
+using arrow function :
+var newArr = studentsArr.filter((val,index) => val.age > 20);
+console.log(newArr);
+ 
+
+
+
+ 
+
+========================================================
+28-09-2022
+
+OOP
+----
+Object oriented programming 
+
+class :
+ -is template or structure to create objects.
+ -is nothing but collection of variables or methods which are used to perform particular 
+  functionality.
+  
+Object :
+  - is nothing but an instance of class.
+  - if you want to access variables and methods related to particular class then we must create
+    an object for that class.
+
+syntax :
+ class className{
+ }
+ 
+ class is keyword used to create classes.
+ you can give any class Name.  
+ 
+	
+
+For ex.
+
+class sample{
+     
+     sayHello(){  
+        //business logic
+        console.log("Hi everyone!!");
+    }
+       
+}
+
+Note:function keyword is not required while declaring function in class.
+
+- in order to create an object for above class we need to use new keyword followed by classname.
+- create object and store in one variable and use that variable to access variables and methods.
+  if we do not store in variable then everytime we need to use object to call any variables
+  or methods.
+  
+  var sampleObj = new sample();
+  sampleObj.sayHello(); 
+  
+ 
+ Member variables or global variables :
+  -the variable which are declared outside the function has global scope.
+  -member variables we need to declare directly in the class.
+  -member variables can be accessed everywhere in the class. i.e in any methods.
+  -inside the class when you declare a variable then var keyword is not required.
+   but you declare local variables using var,let and const.
+
+"this" keyword 
+  - always reference to the current object.
+  - declared variables or methods if we want to access in another method of same class
+    then we need to use this keyword.  
+  
+ Ex.2
+ class sampleTwo {
+    message:string=""; // initial value setting blank.
+    displayMessage(){
+        console.log(this.message);
+    }
+    addMessage(){
+        this.message = "Hi Good Morning!!";
+    }   
+}
+
+
+var sampleObj1 = new sampleTwo();
+sampleObj.addMessage();
+sampleObj.displayMessage();
+ 
+//we can create multiple objects for same class and each class has its own copy of variables  
+ and methods.
+
+var sampleObj2 = new sampleTwo();
+sampleObj2.addMessage();
+sampleObj2.displayMessage();
+ 
+----------------------------
+Assignemnt 6 :
+ Answers :
+
+var bikeDetails = [
+ {bike_name:"Shine",bike_price:20000,bike_mileage:"50 Km"},
+ {bike_name:"Unicorn",bike_price:60000,bike_mileage:"60 Km"},
+ {bike_name:"Pulsar",bike_price:70000,bike_mileage:"55 Km"},
+ {bike_name:"Apache",bike_price:80000,bike_mileage:"45 Km"},
+]
+
+interface Bike {
+ bike_name:string;
+ bike_price:number;
+ bike_mileage:string; 
+}
+
+var newbikeDetailsArr : Bike[] = [] ;
+
+bikeDetails.forEach((el:Bike,index:number)=>{
+   newbikeDetailsArr.push(el);
+})
+
+var filterBikeArr = newbikeDetailsArr.filter((el:Bike)=>{
+  if(parseInt(el.bike_mileage) > 55){
+    return true ;
+  }else {
+  return false ;
+  }
+})
+
+ //or using arrow function
+
+var filterBikeArr = newbikeDetailsArr.filter((el)=> (parseInt(el.bike_mileage) > 55));
+
+console.log(filterBikeArr);
+
+
+==============================
+
+29-09-2022
+Method with parameters example :
+
+class Student {
+  name:string;
+  rollNo:number;
+
+  addInfo(nameOfStudent:string,studentRollNo:number){
+    this.name = nameOfStudent;
+    this.rollNo = studentRollNo;
+    console.log(this.name + "  " + this.rollNo);
+  }
+
+  getInfo(){
+    console.log(this.name + "  " + this.rollNo);
+  }
+
+  // we can add any number of methods depending upon our requirment.
+  evenOrNot(num:number){
+    console.log(this.name);
+    if(num % 2 == 0){
+        console.log("Even Number")
+    }else {
+        console.log("Odd Number");
+        
+    }
+  }
+}
+
+
+const studentobj1 = new Student();
+studentobj1.addInfo("Sam",101);
+studentobj1.getInfo();
+studentobj1.evenOrNot(10);
+
+const studentobj2 = new Student();
+studentobj2.addInfo("John",102);
+studentobj2.getInfo();
+studentobj2.evenOrNot(23);
+
+
+what is constructor method is typescript ?
+----------------------------------
+construcor is predefined method  or special function which will call automatically whenever we 
+instantiate(create object) any class.
+-we can use this method to initialize the properties.
+
+In below example we are initializing name variable in constructor.
+/*
+class Vehicle {
+    name:string;
+    constructor(){
+       this.name = "Bike";
+    }
+
+    start(){
+        console.log(`${this.name} Started`);
+    }
+}
+
+const vehicleObj = new Vehicle();
+vehicleObj.start();
+*/
+
+We can also pass parameters to the constructor..we need to pass parameters value at the time
+of object creation.
+we can also make parameters optional using "?".
+
+class Student {
+    name:string;
+    rollNo:number;
+    skills?:string[]
+    constructor(s_name:string,s_rollNo:number,skillsArr?:string[]){
+      this.name = s_name ;
+      this.rollNo = s_rollNo;
+      this.skills = skillsArr;
+    }
+
+    printStudentDetails(){
+        console.log(`${this.name} ${this.rollNo}`);
+    }
+
+	//
+    addNewSkiils(skillName:string){
+     this.skills?.push(skillName);
+     console.log(this.skills);
+    }
+}
+
+
+const studentObj = new StudentNew("David",201,['Angular','java']);
+studentObj.addNewSkiils("HTML");
+
+
+
+Inheritance:
+-----------
+Inheritance is nothing but an inherit the properties and methods from some other class
+
+without rewriting code again we can inherit the properties or methods from one class to another class.
+
+
+-we need to use "extends" keyword to inherit the functionality
+ from one class to another class.
+
+from which class we are inheriting the properties or method that class is called Parent class.
+to which class we are inheriting the properties are called child class.
+
+-the main advantages of Inheritance is code reusability 
+  
+Rule:
+-we can access all the parent class methods and variables through child class 
+but we cannot access child class related variables and methods through parent class.
+-Any class can extends only one class at a time and can't extends more than one class 
+ 
+Ex. 
+ class Book {
+
+    displayBookName(){
+     console.log("Let Us Java By kanitkar");
+    }
+}
+
+
+class TextBook extends Book{
+    
+}
+
+const bookObj = new TextBook();
+bookObj.displayBookName();
+
+
+Example: Realtime scnerio
+The common methods which are required for housing loan, vehicle loan, personal loan 
+and education loan we can define into a separate class in parent class loan. 
+So that automatically these methods are available to every child loan class.
+
+Example:
+class Loan {
+//common methods which are required for any type of loan.
+}
+class HousingLoan extends Loan {
+//Housing loan specific methods.
+}
+class PersonalLoan extends Loan {
+//Education Loan specific methods.
+}
+======================================
+30-09-2022
+---------------
+
+Super method
+--------------
+super()
+-it is used to call parent class constructor from child class.
+-If parent class constructor accepts few arguments then that parameters we need to pass 
+ in super method() 
+-super() should be the first line in constructor.
+-If the child class has constructor method then calling super() is mandatory.
+-If the parent class doesn't have the constructor and child class has constructor 
+ then we need to invoke the super() without any parameters. 
+
+Ex.
+
+class Loan {
+  nameOfApplicant:string;
+  loanAmount:number;
+  tenure:number;
+
+   constructor(name_of_applicant:string,loan_amount:number,tenure:number){
+     this.nameOfApplicant = name_of_applicant ;
+     this.loanAmount = loan_amount;
+     this.tenure = tenure;
+   }
+
+  setLoanDetails(name_of_applicant:string,loan_amount:number,tenure:number){
+    this.nameOfApplicant = name_of_applicant ;
+    this.loanAmount = loan_amount;
+    this.tenure = tenure;
+  }
+
+   calculateLoan(){
+    // business logic 
+    var charges:number = 2000;
+    return this.loanAmount - charges ;
+   }
+}
+
+class PersonalLoan extends Loan {
+    rateOfInteresnt:number ;
+    constructor(name_of_applicant:string,loan_amount:number,tenure:number,rate_of_interest:number){
+        super(name_of_applicant,loan_amount,tenure);
+        this.rateOfInteresnt = rate_of_interest;
+        console.log(this.loanAmount,this.rateOfInteresnt,this.tenure,this.nameOfApplicant);
+        
+    }
+
+    calculateInterst(){
+        var interest:number = 0 ;
+        interest = ( this.loanAmount * this.rateOfInteresnt * this.tenure ) / 100 ;
+        return interest ;
+    }
+}
+
+
+
+var personalObj = new PersonalLoan('Amol',100000,1,12);
+//var interestAmount = personalObj.calculateInterst();
+//console.log(interestAmount);
+
+
+Access Modifiers :
+------------------
+1.Public Modifier
+-------
+-If we declare any property or method with public modifiers then we can access that method 
+and property anywhere in the class. 
+-by default(if we do to specify the modifier) then that properties and method are public.
+for ex.
+class A {
+  name:string ;
+   
+  setName(nameOfPerson:string){
+    this.name = name ;
+  } 
+  
+}
+
+var obj = new A();
+obj.name="Amol"  // it will not give any error due to public property
+obj.setName();  // it will not give any error due to public method
+
+2.Private Modifier
+---------
+-If we declare any property or method with private modifiers then we can access that 
+method or property within the class only.
+-we cannot access the property or method outside the class.
+ if we try to access outside the class then immediately it will give an error.
+-we cannot access even in child class(derived classes).
+
+class A {
+  private name:string ;
+   
+  private setName(nameOfPerson:string){
+    this.name = name ;
+  } 
+  
+  sayHello(){
+   console.log("Hi Everyone")
+  }
+  
+}
+
+var obj = new A();
+obj.name = "Amol" // compile time error as property is private
+obj.setName() // method is private hence compile time error 
+obj.sayHello() // method is public hence we can access.
+
+3.Protected Modifier
+-------------
+If we declare any property or method with protected modifier then that property or method will
+not be available outside the class but we can access in child class or derived classes.
+
+class A {
+  protected name:string ;
+   
+  protected setName(nameOfPerson:string){
+    this.name = name ;
+  } 
+  
+  sayHello(){
+   console.log("Hi Everyone")
+  }
+}
+
+var obj = new A();
+obj.name="Amol" // compile time error due to protected modifier
+obj.setName() // compile time error
+obj.sayHello() // no error it will display output.
+
+class B extends A {
+ 
+ displayName(){
+  this.name = "Amol"; // we can access protected modifiers variable in child class
+   //or 
+  this.setName("Amol") // we can access protected modifiers method in child class
+ } 
+}
+
+var obj = new B();
+obj.name = "Sam"; // compile time error
+obj.setName(); // compile time error
+
+
+=============================================
+01-10-2022
+------------
+
+readOnly
+-------
+- "readOnly" is keyword used at the time of variable declaration.
+-whenever we declare any property/variable with "readOnly" access modifier then you cannot modify 
+ its value in normal method.
+-you can assign value either at the time of declaration or in constructor.
+
+
+readOnly vs const
+-------------------
+1. "const" used to declare variable inside the function when we have class.
+   "readOnly" used to declare properties inside the class. 
+
+2. "const"- at the time of declaration it is mandatory to initialize or assigning value.
+   "readOnly" can be declared without assigning value.we can initialize inside constructor.
+3. "const" value cannot be reassigned but "readOnly" can be reassigned but only in constructor.
+
+
+Ex.
+
+class Test {
+ readonly message:string;
+
+ constructor(){
+   this.message = "Hi"
+   console.log(this.message);
+ }
+
+//  setMessage(msg:string){
+//     this.message = msg ; // compile time error we cannot initialize or reinitialize its value. 
+//     console.log(this.message);
+//  }
+
+}
+
+const testObj = new Test();
+testObj.setMessage("Good Morning"); // compile time error
+
+what is interface ? 
+--------------
+-interface is nothing but plan for a class.
+-we can only declare variables and methods in the interface which we cannot initialize(assign)a 
+ value for the variables and we cannot write functionality in the methods.
+-we cannot create object for the interface.
+-interface must be implemented on any class 
+-the class which is implementating the interface must contains the same variables 
+ and method name which are already declared in the interface.
+-if we want we can take extra variables and methods in the class which is implementating class.
+ whataver variables and methods are declared in the interface should be there.
+
+Ex:
+----- 
+interface Human {
+    firstName:string;
+    lastName:string;
+    displayFullName():void // void is return type of function 
+	                       // if function is not returning anything then return type is void.
+}
+
+class PersonNew implements Human {
+    firstName: string = "Sachin";
+    lastName: string = "Tendulkar";    
+    displayFullName(): void {
+        console.log(this.firstName + " " + this.lastName);
+    }
+
+}
+
+var personObj1 = new PersonNew();
+personObj1.displayFullName();
+
+
+now we will take one data related object
+var dataObj : Human = {
+    firstName:"Virat",
+	lastName:"Kohli",
+	displayFullName:function(){
+	  console.log(this.firstName + " " + this.lastName);
+	}
+}
+
+// personObj1 = humanObj ; // both key and method are matching hecne we are able to assign
+// personObj1.displayFullName();
+
+//humanObj = personObj1 ;
+//humanObj.displayFullName();
+
+
+Duck typing
+-----------
+if any object key and methods are  exactly matching with a class related variables 
+and methods that can be called as duck typing.
+
+ 
+
+==================================
+03-10-2022
+
+
+Abstraction => 
+----------
+-abstract class is nothing but collection of variables and methods.
+  we cannot create an instance for the abstract class.
+-if you want to access methods and variables related to abstract class 
+we need to implement inheritance concept.
+-in normal classes we can create the object of class but in case of abstract we can't create the 
+ object.
+Ex.
+abstract class Human {
+    firstName:string;
+    lastName:string;
+
+    constructor(first_name:string,last_name:string){
+      this.firstName = first_name ;
+      this.lastName = last_name ;
+    }
+
+    getFullName(){
+        console.log(this.firstName + " " + this.lastName);
+        
+    }
+}
+
+
+class Person extends Human {
+
+}
+ 
+var humanObj = new Human() // compile time error we cannot create the instance of abstract class.
+
+var obj = new Person("Rohit","Sharma");
+obj.getFullName();
+ 
+ 
+Polymorphism :
+--------------
+  same name with different functionality is nothing but polymorphism
+ 
+two types 
+1.Method Overloading
+2.Method overriding
+
+
+1.Method Overloading
+  -> two method are said to be overload if they have same name with different arguments.
+   - typescript compiler does not support the method overloading    
+
+   
+2.Method Overriding
+ -> Due to inheritance concept parent class method and variables are available to child class.
+    but child class is not satisfied with parent class method implementation then we can redeclare
+	or redefine  parent class method in child class in its own way.
+	
+	-method name , method argument , argument types should be same while overriding.
+	
+For Ex.	
+class A {
+    performAction(x1: number, y1: number) {
+      console.log(x1+y1);
+    }
+
+}
+
+class B extends A {
+    performAction(x1:number,y1:number){
+        console.log(x1*y1); // method overriding we can redefine the method on your own way. 
+    }
+}
+
+var obj = new B();
+obj.performAction(10,20);
+	
+===========
+JAVASCRIPT ADVANCED CONCEPTS
+ 
+ 
+   
+ECMAScript 
+
+JS Versions : 
+ES1 1997
+ES2 1998
+ES3 1999
+ES4 Abandoned
+ES5 2009
+ES6 2015
+ES7 2016
+ES8 2017
+ES9 2018
+
+ES6 was the major release in JS. below are the new features
+features of ES6 
+1.let and const
+2.rest paramters
+3.spread parameters
+4.default paramters
+5.oops features
+6.template literals
+7.arrow functions
+8.module
+9.for...of loop
+
+
+1.Rest Parameters :
+ Syntax
+ three dots(...)
+ 
+ - we use rest parameters to handle function parameters. 
+ - when we dont know the numer of parameters in the function then we use rest parameters
+   to handle those parameters.
+ - rest parameters are used with function parameters.
+ - it collect all arguments and store in array  
+  
+function add(...arr:any){
+let result  = 0 ;
+arr.forEach((el:any)=> result = result + el);
+console.log(result);
+}
+
+add(10); // it wil give output 
+add(); // no error
+add(10,20,30,40) // no error
+
+ 
+2.Spread operator:
+ Syntax 
+ three dots (...)
+ 
+ -is used to spread or unpack an array or object elements.
+ 
+  i)Used for copy arrays
+    let arr1 = [1,2,3,4,5];
+    let arr2 = [...arr1];
+
+    console.log(arr2);
+
+  ii) we can use for concatnation
+    let arr1 = [1,2,3,4,5];
+    let arr2 = [...arr1];
+    let arr3 = [...arr1,...arr2];
+    console.log(arr3);
+	
+  iii) we can use for copy object.
+
+  iv) object properties concatnation 
+   let obj1 = {firstName:"Sam",lastName:"Sharma"};
+   let obj2 = {designation:"Software developer"}
+
+   let obj3 = {...obj1,...obj2} 
+   console.log(obj3);
+
+
+
+
+===========
+JAVASCRIPT ADVANCED CONCEPTS
+ 
+ECMAScript 
+
+JS Versions : 
+ES1 1997
+ES2 1998
+ES3 1999
+ES4 Abandoned
+ES5 2009
+ES6 2015
+ES7 2016
+ES8 2017
+ES9 2018
+
+ES6 was the major release in JS. below are the new features
+features of ES6 
+1.let and const
+2.rest paramters
+3.spread parameters
+4.default paramters
+5.oops features
+6.template literals
+7.arrow functions
+8.module
+9.for...of loop
+
+
+1.Rest Parameters :
+ Syntax
+ three dots(...)
+ 
+ - we use rest parameters to handle function parameters. 
+ - when we dont know the numer of parameters in the function then we use rest parameters
+   to handle those parameters.
+ - rest parameters are used with function parameters.
+ - it collect all arguments and store in array  
+  
+function add(...arr:any){
+let result  = 0 ;
+arr.forEach((el:any)=> result = result + el);
+console.log(result);
+}
+
+add(10); // it wil give output 
+add(); // no error
+add(10,20,30,40) // no error
+
+ 
+2.Spread operator:
+ Syntax 
+ three dots (...)
+ 
+ -is used to spread or unpack an array or object elements.
+ 
+  i)Used for copy arrays
+    let arr1 = [1,2,3,4,5];
+    let arr2 = [...arr1];
+
+    console.log(arr2);
+
+  ii) we can use for concatnation
+    let arr1 = [1,2,3,4,5];
+    let arr2 = [6,7,8];
+    let arr3 = [...arr1,...arr2];
+    console.log(arr3);
+	
+  iii) we can use for copy object.
+
+  iv) object properties concatnation 
+   let obj1 = {firstName:"Sam",lastName:"Sharma"};
+   let obj2 = {designation:"Software developer"}
+
+   let obj3 = {...obj1,...obj2} 
+   console.log(obj3);
+
+=========================================================
+04-10-2022
+   
+Object Cloning
+----------------
+Using spread operator we can clone the object.
+if we use assignment operator "=" for cloning then both object will point to same values.
+we cann't create new objects by just using "=" operator.
+
+let obj1 = {name:"Sachin" , age:40};
+let obj2 = obj1 ;
+
+obj2.name = "Rohit"
+
+console.log(obj1);  // {name:"Rohit" , age:40}
+console.log(obj2); // {name:"Rohit" , age:40}
+
+Using Spread Operator
+------------------
+
+let obj1 = {name:"Sachin" , age:40};
+let obj2 = {...obj1} ;
+
+obj2.name = "Rohit"
+
+console.log(obj1); // {name:"Sachin" , age:40};
+console.log(obj2);  // {name:"Rohit" , age:40};
+
+
+Default Parameters
+------------------------
+we can pass default values for arguments.If we are not passing any value then only 
+default values will be considered.
+
+function sayHello(message:string="Hi How are you"){
+    console.log(message);
+}
+
+sayHello(); // o/p "Hi How are you"
+sayHello("Hello Everyone"); // "Hello Everyone"
+
+
+Hoisting
+----------------------------
+Hoisting is Javascript interprpreter's behaviour 
+-it will move all the function and variables declarations to the top of current scope.
+-If variables and function declared inside the function then they are moved to the top of functions
+
+
+For Ex.
+1.
+//without declaring the function first we are able to call the function.
+sayHello("Hello Everyone");
+
+function sayHello(message){
+    console.log(message);
+}
+
+2.without declarations we are able to access the variables first.JS will not throw any error
+console.log(x); // undefined..only declarations can be hoisted.
+var x = 10 ;
+console.log(x); // 10
+
+-incase of let and const hoisting will not work. 
+-incase of anonymous and arrow function hoisting will not work.
+  anonymous and arrow funcion can be called only after declarations.
+ 
+ 
+ 
+CallBack Functions
+-----------------------
+-Callback functions are the function that can be passed as argument to another fucntion
+and that function gets excuted depending upon certain actions.
+
+- Outer function is responsible to call the callback function depending upon certain actions.
+
+function sum(x1:number,x2:number,myFn:Function){
+    let result = x1 + x2 ;
+    // depending upon the actions we can call the function
+     myFn();
+    console.log("result is " + result);
+}
+
+sum(10,20,sayHi);
+
+function sayHi(){
+    console.log("Hi Everyone");
+}
+
+Higher Order Functions
+--------------------------
+we can pass function as argument to another function.
+a function can return another function such type of functions are called higher order functions.
+For Ex 
+Filter, Map etc
+
+var filterBikeArr = newbikeDetailsArr.filter((el:Bike)=>{
+  if(parseInt(el.bike_mileage) > 55){
+    return true ;
+  }else {
+  return false ;
+  }
+})
+
+
+
+
+Closure 
+------------------------------
+Is feature in javascript.
+-when we can define function inside another function then it is called nested function.
+In nested functions 
+  -inner function has access to outer function variables.
+  -it has access to its own scope variables defined between curly brackets.
+  -it also has access to global variables.
+  
+
+function parent(){
+  var parentVehicle = "Car"; 
+  function child(){
+    var childVehicle = "Bike";
+    console.log(parentVehicle,childVehicle);
+  }
+  return child ;
+}
+
+var myFn = parent();
+myFn(); // o/p Car,Bike
+
+- the inner function can access variables of parent function due to closures.
+  during parent method excution parent function preserved variables and pass it to child function  
+  internally. hence child function can access these preserved variables.
+
+ -------------------------
+Map() method ->
+ map is used for mapping each element of the array into a different value  
+ map function creates new array from calling a function for every array element
+ map will not modify the original array.
+
+var arr = [10,20,30,40,50] ;
+//adding 5 to each element of array.
+var newArr = arr.map((el:number)=> el+5);
+
+console.log(arr); // [10,20,30,40,50]
+console.log(newArr); // [15,25,35,45,55]
+HTML(Hyper Text Markup language)
+----------
+HTML is used to create the structure of web page.
+CSS is used to apply style to the web pages or html pages.
+JavaScript is used to add functionality to html pages.
+
+HTML = standard markup language used for creating/building web pages with decorative information
+       so that users can browse and read the content more easily.
+	   HTML language has provided lot of pre-defined tags attached with meaning, 
+	   so that when we try to access the HTML page using web browser, 
+	   browser instead of displaying it as text content it parses the HTML tags and 
+	   displays the content in a readable format.
+
+	   
+  
+Every HTML document must and should start with a doctype declaration tag as shown below.
+<!DOCTYPE html>
+
+The above <!DOCTYPE > declaration indicates 2 things
+  1. The type of the document we have written is an HTML document to the browser
+  2. The above declaration indicates we are using HTML5 version to the browser
+
+#2. <html></html>
+This is the first root element of a HTML page. all the tags written in the HTML page should be
+contained inside <html> only  
+
+
+Structure of HTMl Page:
+every html page contains two parts
+1.head 
+ - head contains metadata like title , author, description etc of the web page.
+ - it also contains links to css or js files.
+ - The tags written within the head will not be displayed within the web browser. 
+   those are used for attaching information about your web page only.
+    
+   For ex. title tag - used for describing the title of web page.
+    
+2.body 
+	body contains actual content which we want to display in browser.
+
+Display title :
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Page</title>
+  </head>
+  <body>
+  </body>
+</html>	
+
+
+	
+1. HTML Heading tags :
+   To display the text of information formatted in a heading, we need to use head tag.
+   HTML supports 6 heading tags <h1>,<h2>,....<h6>   
+
+h1 h2 h3...h6
+
+For Ex.
+<h1>This is H1 headings</h1>
+
+2.Paragraph tag
+-----------------
+-is used to display the paragraph of text.
+-A paragraph always starts on a new line only
+
+<p>This is paragraph tag</p>
+
+
+3.Horizontal Rules (HR)
+------------------------
+<hr> tag is used for displaying an horizantal line on the page to separate content 
+ one from another.
+
+4.Line Break  (<BR>)
+-------------------
+if we want to add a line break without starting a new paragraph we can use <br>
+
+
+-<hr>,<br> are self closing tags they doesn't require closing tag.
+
+Ex.
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>First WebPage</title>
+</head>
+
+<body>
+    <!-- <h1>This is H1 headings</h1>
+     <h2>This is H2 headings</h2>
+     <h3>This is H3 headings</h3>
+     <h4>This is H4 headings</h4>
+     <h5>This is H5 headings</h5>
+     <h6>This is H6 headings</h6> -->
+
+    <!-- <p>This is first paragraph </p>
+    <p>This is second paragraph</p>
+    <p>This is third paragraph</p>
+    <p>This is fourth paragraph</p> -->
+
+    <!-- <h2>Map() method</h2>
+    <p>map is used for mapping each element of the array into a different value </p>
+    <hr>
+    <p>map function creates new array from calling a function for every array element</p>
+    <hr>
+    <p>map function creates new array from calling a function for every array element</p> -->
+
+    <p>
+  the inner function can access variables of parent function due to closures. <br>
+  during parent method excution parent function preserved variables and pass it to child function  
+  internally.<br> hence child function can access these preserved variables.
+    </p>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+	
+  
+	   
+	   
+ 
+  
+  
+  
+
+  
+
+  
+  
+
+ 
+
+
+
+
+  
+  
+  
+  
+   
+  
+ 
+
+  
+
+  
+
+
+
+
+
+ 
+ 
+
+ 
+  
+
+
+
+
+
+    
+   
+   
+   
+	 
+	 
+	 
+	 
+	 
+     
+      				
+				
+				
+				
+				
+			 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
